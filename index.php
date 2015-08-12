@@ -16,7 +16,7 @@ get_header(); ?>
 
     <div class="col-xs-12">
 
-      Konten Home yoi
+      <!-- content home here -->
 
     </div>
 
