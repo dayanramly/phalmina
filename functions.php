@@ -13,12 +13,12 @@ add_filter( 'ot_theme_mode', '__return_true' );
 require( trailingslashit( get_template_directory() ) . 'admin/ot-loader.php' );
 include_once('panel/theme-options.php');
 
-if ( ! function_exists( 'neutrina_setup' ) ) :
+if ( ! function_exists( 'phalmina_setup' ) ) :
 
 	//adding css
-	function neutrina_setup() {
+	function phalmina_setup() {
 
-		load_theme_textdomain( 'neutrina', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'phalmina', get_template_directory() . '/languages' );
 
 		add_theme_support( 'automatic-feed-links' );
 
@@ -40,26 +40,26 @@ if ( ! function_exists( 'neutrina_setup' ) ) :
 			'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
 			) );
 
-	// $color_scheme  = neutrina_get_color_scheme();
+	// $color_scheme  = phalmina_get_color_scheme();
 	// $default_color = trim( $color_scheme[0], '#' );
 
-		add_theme_support( 'custom-background', apply_filters( 'neutrina_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'phalmina_custom_background_args', array(
 			'default-color'      => $default_color,
 			'default-attachment' => 'fixed',
 			) ) );
 
 		add_editor_style( array( 'css/editor-style.css' ) );
 	}
-endif; // neutrina_setup
-add_action( 'after_setup_theme', 'neutrina_setup' );
+endif; // phalmina_setup
+add_action( 'after_setup_theme', 'phalmina_setup' );
 
 // widget initialize here
-// function neutrina_widgets_init() {
+// function phalmina_widgets_init() {
 // 	if (function_exists('register_sidebar')) {
 // 		register_sidebar( array(
-// 			'name'          => __( 'Widget Slider', 'neutrina' ),
+// 			'name'          => __( 'Widget Slider', 'phalmina' ),
 // 			'id'            => 'sidebar-1',
-// 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'neutrina' ),
+// 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'phalmina' ),
 // 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 // 			'after_widget'  => '</aside>',
 // 			'before_title'  => '<h2 class="widget-title">',
@@ -67,14 +67,14 @@ add_action( 'after_setup_theme', 'neutrina_setup' );
 // 			));
 // 	}
 // }
-// add_action( 'widgets_init', 'neutrina_widgets_init' );
+// add_action( 'widgets_init', 'phalmina_widgets_init' );
 
-function neutrina_scripts() {
+function phalmina_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.2' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.3.0' );
 
 	// Load our main stylesheet.
-	wp_enqueue_style( 'neutrina-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'phalmina-style', get_stylesheet_uri() );
 
 	if(!is_admin()){
 		wp_deregister_script('jquery' );
@@ -85,7 +85,7 @@ function neutrina_scripts() {
 	wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.2', true );
 
 }
-add_action( 'wp_enqueue_scripts', 'neutrina_scripts' );
+add_action( 'wp_enqueue_scripts', 'phalmina_scripts' );
 
 // Register Theme Features
 function custom_theme_features()  {

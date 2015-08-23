@@ -3,8 +3,8 @@
 * The template for displaying all single posts and attachments
 *
 * @package WordPress
-* @subpackage npktheme
-* @since npktheme
+* @subpackage Phalmina
+* @since Phalmina
 */
 
 get_header(); ?>
