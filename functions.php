@@ -5,13 +5,13 @@ $themeurl = $siteurl.'/wp-content/themes/'.get_option('template');
 /**
  * Required: set 'ot_theme_mode' filter to true.
  */
-// add_filter( 'ot_theme_mode', '__return_true' );
+add_filter( 'ot_theme_mode', '__return_true' );
 
 /**
  * Required: include OptionTree.
  */
-/*require( trailingslashit( get_template_directory() ) . 'admin/ot-loader.php' );
-include_once('panel/theme-options.php');*/
+require( trailingslashit( get_template_directory() ) . 'admin/ot-loader.php' );
+include_once('panel/theme-options.php');
 
 if ( ! function_exists( 'neutrina_setup' ) ) :
 
