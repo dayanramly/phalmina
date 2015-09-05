@@ -54,20 +54,20 @@ endif; // phalmina_setup
 add_action( 'after_setup_theme', 'phalmina_setup' );
 
 // widget initialize here
-// function phalmina_widgets_init() {
-// 	if (function_exists('register_sidebar')) {
-// 		register_sidebar( array(
-// 			'name'          => __( 'Widget Slider', 'phalmina' ),
-// 			'id'            => 'sidebar-1',
-// 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'phalmina' ),
-// 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-// 			'after_widget'  => '</aside>',
-// 			'before_title'  => '<h2 class="widget-title">',
-// 			'after_title'   => '</h2>',
-// 			));
-// 	}
-// }
-// add_action( 'widgets_init', 'phalmina_widgets_init' );
+function phalmina_widgets_init() {
+	if (function_exists('register_sidebar')) {
+		register_sidebar( array(
+			'name'          => __( 'Widget Slider', 'phalmina' ),
+			'id'            => 'sidebar-1',
+			'description'   => __( 'Add widgets here to appear in your sidebar.', 'phalmina' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+			));
+	}
+}
+add_action( 'widgets_init', 'phalmina_widgets_init' );
 
 function phalmina_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.2' );
