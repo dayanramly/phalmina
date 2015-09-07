@@ -8,20 +8,21 @@
 				</a>
 			</div>
 			<div class="col-xs-4">
-				<div class="sub-title-header">
-					Second tab
-				</div>
-				agi pasien yang rajin mendengarkan alunan piano Mozart selama setengah jam setiap harinya, mereka mengalami perubahan denyut jantung dan tekanan darah.
+				<h4><?php echo get_option_tree('footer_middle_title');?></h4>
+				<p><?php echo get_option_tree('footer_middle'); ?></p>
 			</div>
 			<div class="col-xs-4">
-				third tab
+				<h4><?php echo get_option_tree('footer_right_title');?></h4>
+				<p><?php echo get_option_tree('footer_right'); ?></p>
 			</div>
 		</div>
 	</div>
 	<div class="divider-bottom-dashed"></div>
 	<div class="container">
 		<div class="row">
-			copyright
+			<div class="col-xs-12 phalmina-copyright">
+				<?php echo get_option_tree('copyright_text') ?>
+			</div>
 		</div>
 	</div>
 </footer>
