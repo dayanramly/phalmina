@@ -47,14 +47,27 @@ get_header(); ?>
 				<li><a href="http://localhost/ngapangapak/kamus-ngapak/">Kamus Ngapak</a></li>
 			</ul>
 		</div>
-		<div class="col-xs-3 right-box">
-			right gallery
+		<div class="col-xs-3 phalmina-socmed">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-page" data-href="https://www.facebook.com/pages/Ngapangapak/1641449856098305" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Ngapangapak/1641449856098305"><a href="https://www.facebook.com/pages/Ngapangapak/1641449856098305">Ngapangapak</a></blockquote></div></div>
+			<ul>
+<!-- 				<li>Facebook</li> -->
+				<li class="twitter">Twitter <img src="wp-content/themes/phalmina/img/twitter.png"></li>
+				<li class="gplus">Google + <img src="wp-content/themes/phalmina/img/gplus.png"></li>
+			</ul>
 		</div>
 	</div>
 </div>
 
 <div class="container phalmina-home-body">
-<div class="divider-full"></div>
+	<div class="divider-full"></div>
 	<div class="row">
 		<div class="col-xs-8"> <!-- berita terbaru -->
 			<div class="phalmina-popular-post">

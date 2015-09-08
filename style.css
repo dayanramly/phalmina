@@ -150,6 +150,36 @@ body{
 	list-style: none;
 	min-height: 93px;
 }
+.phalmina-socmed{
+    padding-top: 10px;
+}
+.phalmina-socmed ul{
+	margin: 0;
+	padding: 0;
+} 
+.phalmina-socmed ul>li{
+    padding: 7px 7px 7px 20px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    list-style: none;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+}
+.phalmina-socmed .twitter img,
+.phalmina-socmed .gplus img{
+    height: 35px;
+    position: absolute;
+    right: 16px;
+    margin-top: -7px !important;
+}
+.phalmina-socmed .twitter{
+	background: #3B8CEA;
+}
+.phalmina-socmed .gplus{
+	background: #CE3A26;
+}
+
 .phalmina-popular-today{
 	margin-right: 0;
 }
