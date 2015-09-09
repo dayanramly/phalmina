@@ -8,7 +8,7 @@
 */
 
 get_header(); ?>
-
+<div class="divider-full"></div>
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">

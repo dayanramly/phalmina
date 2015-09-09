@@ -42,9 +42,21 @@ get_header(); ?>
 		</div>
 		<div class="col-xs-3 phalmina-urgent">
 			<ul>
-				<li><a href=" http://localhost/ngapangapak/peta-angkot/">Peta</a></li>
-				<li><a href="http://localhost/ngapangapak/nomor-telepon-penting/">Nomor Telepon Penting</a></li>
-				<li><a href="http://localhost/ngapangapak/kamus-ngapak/">Kamus Ngapak</a></li>
+				<li>
+					<p>Peta Angkot</p>
+					<span>Upcoming</span>
+					<!-- <a href=" http://localhost/ngapangapak/peta-angkot/">Peta Angkot</a> -->
+				</li>
+				<li>
+					<p>Nomor Telepon Penting</p>
+					<span>Upcoming</span>
+					<!-- <a href="http://localhost/ngapangapak/nomor-telepon-penting/">Nomor Telepon Penting</a> -->
+				</li>
+				<li>
+					<p>Kamus Ngapak</p>
+					<span>Upcoming</span>
+					<!-- <a href="http://localhost/ngapangapak/kamus-ngapak/">Kamus Ngapak</a> -->
+				</li>
 			</ul>
 		</div>
 		<div class="col-xs-3 phalmina-socmed">
@@ -58,7 +70,7 @@ get_header(); ?>
 			}(document, 'script', 'facebook-jssdk'));</script>
 			<div class="fb-page" data-href="https://www.facebook.com/pages/Ngapangapak/1641449856098305" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Ngapangapak/1641449856098305"><a href="https://www.facebook.com/pages/Ngapangapak/1641449856098305">Ngapangapak</a></blockquote></div></div>
 			<ul>
-<!-- 				<li>Facebook</li> -->
+				<!-- 				<li>Facebook</li> -->
 				<li class="twitter">Twitter <img src="wp-content/themes/phalmina/img/twitter.png"></li>
 				<li class="gplus">Google + <img src="wp-content/themes/phalmina/img/gplus.png"></li>
 			</ul>

@@ -1,35 +1,71 @@
-<?php
+<?php 
 /**
- * The template for displaying Search Results pages
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
+* The template for displaying all single posts and attachments
+*
+* @package WordPress
+* @subpackage Phalmina
+* @since Phalmina
+*/
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<hr>
+			<?php 
+				// $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				// $args = array(
+				// 	'posts_per_page' => 2,
+				// 	'paged' => $paged
+				// 	);
 
-		<?php if ( have_posts() ) : ?>
+				// query_posts($args); 
 
+			if ( have_posts() ) :
+				?>
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'phalmina' ), get_search_query() ); ?></h1>
-			</header>
+				<h3 class="page-title"><?php printf( __( 'Search Results for: %s', 'phalmina' ), get_search_query() ); ?></h3>
+			</header><!-- .page-header -->
+			<?php
+			while ( have_posts() ) : the_post();
+			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );?>
+			<div class="media">
+				<div class="media-left">
+					<a href="<?php the_permalink(); ?>">
+						<img src="<?php echo($image[0]); ?>" alt="<?php the_permalink(); ?>" class="media-object" width="160px" height="160px">
+					</a>
+				</div>
+				<div class="media-body">
+					<a href="<?php the_permalink(); ?>" style="text-decoration:none;color:#555555;">
+						<?php the_title( '<h4 class="media-heading">', '</h4>' );?>
+					</a><br />
+					<?php the_excerpt(); ?>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+					<div class="row">
+						<div class="col-xs-12 pull-left">
+							<a class="btn btn-default btn-go" href="<?php the_permalink() ?>" role="button">Lanjut Baca</a>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<hr>
+			</div>
 
+		<?php endwhile; ?>
+				<!-- <div class="nav-previous pull-right"><?php next_posts_link( 'Older posts' ); ?></div>
+				<div class="nav-next pull-right"><?php previous_posts_link( 'Newer posts' ); ?></div> -->
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php else : ?>
+			<div class="col-xs-12">
+				<div class="home-blog-post">
+					<h4>Maaf, belum ada postingan</h4>
+				</div>
+			</div>
 		<?php endif; ?>
+	</div>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+</div>
+</div>
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer();?>

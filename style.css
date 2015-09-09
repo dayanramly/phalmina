@@ -29,7 +29,7 @@ body{
 	border-bottom: 1px dashed #ddd;
 }
 .phalmina-home-slider{
-    padding: 20px 20px 0px;
+	padding: 20px 20px 0px;
 }
 .phalmina-home-body{
 	padding: 20px 20px 60px;
@@ -149,29 +149,47 @@ body{
 	margin-bottom: 10px;
 	list-style: none;
 	min-height: 93px;
+	background: #bbb;
+	text-align: center;
 }
+.phalmina-urgent ul>li p{
+	color: #fff;
+	font-size: 15px;
+	opacity: .3;
+}
+.phalmina-urgent ul>li span{
+	font-size: 20px;
+	color: #fff;
+	opacity: .6;
+}
+.phalmina-urgent ul>li a:hover{
+	color: #555;
+	text-decoration: none;
+}
+
+
 .phalmina-socmed{
-    padding-top: 10px;
+	padding-top: 10px;
 }
 .phalmina-socmed ul{
 	margin: 0;
 	padding: 0;
 } 
 .phalmina-socmed ul>li{
-    padding: 7px 7px 7px 20px;
-    margin-top: 7px;
-    margin-bottom: 5px;
-    list-style: none;
-    height: 35px;
-    border-radius: 20px;
-    color: #fff;
+	padding: 7px 7px 7px 20px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+	list-style: none;
+	height: 35px;
+	border-radius: 20px;
+	color: #fff;
 }
 .phalmina-socmed .twitter img,
 .phalmina-socmed .gplus img{
-    height: 35px;
-    position: absolute;
-    right: 16px;
-    margin-top: -7px !important;
+	height: 35px;
+	position: absolute;
+	right: 16px;
+	margin-top: -7px !important;
 }
 .phalmina-socmed .twitter{
 	background: #3B8CEA;
@@ -197,4 +215,59 @@ body{
 	font-size: 12px;
 	color: #888;
 	padding: 10px;
+}
+
+.widget_search .screen-reader-text {
+	display:none;
+}
+
+.phalmina-search-bar{
+	padding-top: 60px;
+	text-align: right;
+}
+.search-field {
+	padding: 8px 14px;
+	border: 1px solid #ddd;
+	width: 220px;
+	font-weight: normal;
+	border-radius: 20px;
+	margin-top: 1px;
+}
+.search-field:active,
+.search-field:focus,
+.search-field:visited {
+	border: 1px solid #bbb;
+	outline: none;
+}
+.search-submit {
+	position:absolute;
+	width:40px;
+	height:40px;
+	background: url("img/search.png") top left no-repeat;  
+	border: none; 
+	right: 14px;
+}
+
+.phalmina-page-container{
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+.phalmina-page{
+	
+}
+.phalmina-page img{
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.phalmina-page p{
+	line-height: 1.8;
+	font-size: 18px;
+}
+.phalmina-page p strong{
+	font-size: 20px;
+}
+.phalmina-page-title{
+	margin-bottom: 25px;
 }

@@ -23,7 +23,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-5">
 <!-- 						<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 							<label>
 								<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
@@ -34,6 +34,15 @@
 <!-- 						<ul id="nav">
 							<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 						</ul> -->
+					</div>
+					<div class="col-xs-4 phalmina-search-bar">
+						<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+							<label>
+								<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Cari Disini …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+							</label>
+							<input type="submit" class="search-submit" value="<?php echo esc_attr_x( '', 'submit button' ) ?>" />
+						</form>
+						<?php //dynamic_sidebar('search-bar'); ?>
 					</div>
 				</div>
 			</div>
