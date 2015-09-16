@@ -20,7 +20,7 @@ get_header(); ?>
 
 			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );?>
 
-			<img src="<?php echo($image[0]); ?>" alt="" class="img-responsive img-page">
+			<img src="<?php echo($image[0]); ?>" alt="" class="img-responsive phalmina-cover-page">
 
 			<?php
 			the_content();
