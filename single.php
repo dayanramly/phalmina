@@ -13,7 +13,7 @@ get_header(); ?>
 
 	<div class="row">
 
-		<div class="col-xs-8 phalmina-page">
+		<div class="col-md-8 col-xs-12 phalmina-page">
 			<?php 
 			while ( have_posts() ) : the_post();
 			the_title( '<h2 class="phalmina-page-title">', '</h2>' );
@@ -28,7 +28,7 @@ get_header(); ?>
 			endwhile; 
 			?>
 		</div>
-		<div class="col-xs-4">
+		<div class="col-md-4 col-xs-12">
 			<div class="phalmina-popular-post">
 				<h2>Popular Post</h2>
 				<div class="phalmina-box right-box">

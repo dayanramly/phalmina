@@ -16,26 +16,14 @@
 		<div class="navigation">      
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-3">
+					<div class="col-md-3 col-xs-6">
 						<div class="logo">          
 							<a href="<?php bloginfo('url')?>">
 								<img class="media-object" src="<?php echo get_option_tree('change_logo') ?>" >
 							</a>
 						</div>
 					</div>
-					<div class="col-xs-5">
-<!-- 						<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-							<label>
-								<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
-								<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-							</label>
-							<input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
-						</form> -->
-<!-- 						<ul id="nav">
-							<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-						</ul> -->
-					</div>
-					<div class="col-xs-4 phalmina-search-bar">
+					<div class="col-md-4 col xs-6 col-md-offset-5 phalmina-search-bar">
 						<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 							<label>
 								<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Cari Disini …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />

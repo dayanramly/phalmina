@@ -13,7 +13,7 @@ get_header(); ?>
 
 	<div class="row">
 
-		<div class="col-xs-8">
+		<div class="col-md-8 col-xs-12">
 			<h3 style="color:#848484">Postingan terkait <?php single_cat_title( '', true ); ?></h3>
 			<hr>
 			<?php 
@@ -62,7 +62,7 @@ get_header(); ?>
 			</div>
 		<?php endif; ?>
 	</div>
-		<div class="col-xs-4">
+		<div class="col-md-4 col-xs-12">
 			<div class="phalmina-popular-post">
 				<h2>Popular Post</h2>
 				<div class="phalmina-box right-box">

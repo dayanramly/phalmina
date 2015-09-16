@@ -13,10 +13,10 @@ get_header(); ?>
 <!-- <div class="container-fluid phalmina-home-body-container"> -->
 <div class="divider-full"></div>
 <div class="container phalmina-home-popular">
-	<div class="col-xs-2">
+	<div class="col-md-2 col-xs-4">
 		<h3>Popular Tags</h3>
 	</div>
-	<div class="col-xs-10">
+	<div class="col-md-10 col-xs-8">
 		<ul>
 			<?php
 			$posttags = get_the_tags($post->ID);
@@ -33,14 +33,14 @@ get_header(); ?>
 
 <div class="container phalmina-home-slider">
 	<div class="row">
-		<div class="col-xs-6">
+		<div class="col-md-6 col-xs-12">
 			<div id="home-slider">
 
 				<?php dynamic_sidebar('sidebar-1'); ?>
 
 			</div> <!-- end of home-slider -->
 		</div>
-		<div class="col-xs-3 phalmina-urgent">
+		<div class="col-md-3 col-xs-6 phalmina-urgent">
 			<ul>
 				<li>
 					<p>Peta Angkot</p>
@@ -59,7 +59,7 @@ get_header(); ?>
 				</li>
 			</ul>
 		</div>
-		<div class="col-xs-3 phalmina-socmed">
+		<div class="col-md-3 col-xs-6 phalmina-socmed">
 			<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0];
@@ -81,7 +81,7 @@ get_header(); ?>
 <div class="container phalmina-home-body">
 	<div class="divider-full"></div>
 	<div class="row">
-		<div class="col-xs-8"> <!-- berita terbaru -->
+		<div class="col-md-8 col-xs-12"> <!-- berita terbaru -->
 			<div class="phalmina-popular-post">
 				<h2>Popular Today</h2>
 				<div class="phalmina-box">
@@ -91,12 +91,12 @@ get_header(); ?>
 					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 					<a href="<?php the_permalink() ?>">
 						<div class="home-blog-post">
-							<div class="col-xs-2">
+							<div class="col-md-2 col-xs-3">
 								<div class="home-post-thumb">
 									<img class="img-responsive" src="<?php echo $image[0]; ?>">
 								</div>
 							</div>
-							<div class="col-xs-10">							
+							<div class="col-md-10 col-xs-9">							
 								<div class="home-post-title">
 									<h3><?php the_title(); ?> </h3>
 								</div>
@@ -125,7 +125,7 @@ get_header(); ?>
 		center-side
 	</div>
 </div> -->
-<div class="col-xs-4">
+<div class="col-md-4 col-xs-12">
 	<div class="phalmina-popular-post">
 		<h2>Popular Post</h2>
 		<div class="phalmina-box right-box">
