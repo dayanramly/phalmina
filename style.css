@@ -60,6 +60,8 @@ body{
 	width: 20px;
 }
 .wp-caption-text{
+	max-width: 750px;
+	margin-bottom: 10px;
 	text-align: center !important;
 	padding-top: 10px !important;
 	color: #999 !important;
@@ -256,9 +258,10 @@ body{
 	
 }
 .phalmina-page img{
-	max-width: 100%;
+	width: 100%;
+	max-width: 750px;
 	height: auto;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 
 .phalmina-page p{
