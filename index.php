@@ -14,7 +14,7 @@ get_header(); ?>
 <div class="divider-full"></div>
 <div class="container phalmina-home-popular">
 	<div class="col-md-2 col-xs-4">
-		<h3>Popular Tags</h3>
+		<h3>Sebutan populer</h3>
 	</div>
 	<div class="col-md-10 col-xs-8">
 		<ul>
@@ -68,7 +68,7 @@ get_header(); ?>
 				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-			<div class="fb-page" data-href="https://www.facebook.com/pages/Ngapangapak/1641449856098305" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Ngapangapak/1641449856098305"><a href="https://www.facebook.com/pages/Ngapangapak/1641449856098305">Ngapangapak</a></blockquote></div></div>
+			<div class="fb-page" data-href="https://www.facebook.com/pages/Ngapangapak/1641449856098305" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/Ngapangapak/1641449856098305"><a href="https://www.facebook.com/pages/Ngapangapak/1641449856098305"></a></blockquote></div></div>
 			<ul>
 				<!-- 				<li>Facebook</li> -->
 				<li class="twitter">Twitter <img src="wp-content/themes/phalmina/img/twitter.png"></li>
@@ -83,7 +83,7 @@ get_header(); ?>
 	<div class="row">
 		<div class="col-md-8 col-xs-12"> <!-- berita terbaru -->
 			<div class="phalmina-popular-post">
-				<h2>Popular Today</h2>
+				<h2>Populer dina kie</h2>
 				<div class="phalmina-box">
 					<?php query_posts( 'posts_per_page=6' );?>
 					<?php if ( have_posts() ) : ?>
@@ -110,7 +110,7 @@ get_header(); ?>
 		<?php else : ?>
 		<div class="col-xs-12">
 			<div class="home-blog-post">
-				<h4>Belum ada postingan</h4>
+				<h4>Urung ana postingan</h4>
 			</div>
 		</div>
 	<?php endif; ?>
@@ -127,7 +127,7 @@ get_header(); ?>
 </div> -->
 <div class="col-md-4 col-xs-12">
 	<div class="phalmina-popular-post">
-		<h2>Popular Post</h2>
+		<h2>Tulisan populer</h2>
 		<div class="phalmina-box right-box">
 
 			<?php query_posts( 'posts_per_page=6' );?>
@@ -155,7 +155,7 @@ get_header(); ?>
 <?php else : ?>
 	<div class="col-xs-12">
 		<div class="home-blog-post">
-			<h4>Belum ada postingan</h4>
+			<h4>Urung ana postingan</h4>
 		</div>
 	</div>
 <?php endif; ?>

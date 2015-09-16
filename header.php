@@ -26,7 +26,7 @@
 					<div class="col-md-4 col xs-6 col-md-offset-5 phalmina-search-bar">
 						<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 							<label>
-								<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Cari Disini …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+								<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Golet nang kene …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 							</label>
 							<input type="submit" class="search-submit" value="<?php echo esc_attr_x( '', 'submit button' ) ?>" />
 						</form>

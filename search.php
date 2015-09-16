@@ -25,7 +25,7 @@ get_header(); ?>
 			if ( have_posts() ) :
 				?>
 			<header class="page-header">
-				<h3 class="page-title"><?php printf( __( 'Search Results for: %s', 'phalmina' ), get_search_query() ); ?></h3>
+				<h3 class="page-title"><?php printf( __( 'Tulisan sing ana gandengane: %s', 'phalmina' ), get_search_query() ); ?></h3>
 			</header><!-- .page-header -->
 			<?php
 			while ( have_posts() ) : the_post();
